@@ -13,3 +13,5 @@ touch README.md
 
 # To preserve the change of directory
 exec $SHELL
+
+# PROJECT_NAME=`echo $1 | cut -d "/" -f 2`
