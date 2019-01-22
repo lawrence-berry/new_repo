@@ -13,7 +13,9 @@ PROJECT_PATH=$PROJECT_FOLDERS_LOCATION$1
 
 if [[ $FOLDER_NAME =~ ^geome$ && $PROJECT_NAME =~ api$ || $2 =~ api ]]; then
   echo "yes"
-  /Users/$USER/Projects/geome/template/bin/setup $PROJECT_PATH
+  cd /Users/$USER/Projects/geome/template
+  /Users/$USER/Projects/geome/template/bin/setup
+  cd $PROJECT_PATH
 else
   mkdir -p ~/Projects/$1
   cd ~/Projects/$1
