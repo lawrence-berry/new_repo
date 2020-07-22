@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # $1 is a relative path from $HOME/Projects to install to
-# $2 is one of api, fe (both geo.me), bash
+# $2 is one of api, fe (both geo.me), bash or ruby
 if [[ ! $1 =~ / ]]; then
   echo "Please include containing folder, e.g.:"
   echo "  new_repo util/app"
